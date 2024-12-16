@@ -156,12 +156,25 @@
                     type="email"
                     name="email"
                     id="email"
-                    pattern=".+@example\.com" size="65"
+                    pattern=".+@example\.com"
+                    size="55"
                     required
                   />
-                  <label for="name">Objet*</label>
-                  <input type="text" name="name" id="name" size="65" required />
+                  <label for="object">Objet*</label>
+                  <input type="text" name="name" id="name" size="55" required />
+                  <label for="message">Message*</label>
+                  <input type="text" name="message" id="message" size="55" required />
                 </div>
+                <p>*Champ obligatoire</p>
+                <div>
+                <input type="checkbox" id="terms" name="terms" required/>
+                <label for="terms"
+                  >En soumettant ce formulaire, j'accepte que mes données
+                  personnelles soient utilisées pour me recontacter. Aucun autre
+                  traitement ne sera effectué avec ces informations.</label
+                >
+              </div>
+              <input type="submit" value="Envoyer" />
               </form>
             </div>
           </section>
