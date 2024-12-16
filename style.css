@@ -5,17 +5,12 @@
 body {
   font-family: "Poppins";
   scroll-behavior: smooth;
-  margin: 0;
-  img {
-    width: 40px;
-    height: 43px;
-  }
   ul {
     list-style-type: none;
   }
   header {
-    position: fixed;
     padding-top: 55px;
+    width: 35%;
     h1,
     h2,
     p,
@@ -31,17 +26,38 @@ body {
     }
   }
   main {
-    position: relative;
-    left: 700px;
+    width: 45%;
+    left: 690px;
     padding-top: 55px;
     section#aboutMe,
     section#skills,
     section#projects,
     section#contact {
-      padding-bottom: 35px;
+      padding: 20px 0;
     }
     section#skills {
       div.pictures {
+        width: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        ul{   
+          li{
+            img {
+              width: 70px;
+              height: 63px;
+            }
+          }
+        }
+      }
+    }
+    section#projects {
+      div.allProjects {
+        span {
+          img {
+            width: 10rem;
+            height: 7rem;
+          }
+        }
       }
     }
   }
