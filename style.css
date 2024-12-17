@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-:root{
+:root {
   --primary-background: #23315b;
   --secondary-color: #2f3556;
 }
 
 body {
-  scroll-behavior: smooth;
-  font-family: 'Lato';
-  background-color: var(--secondary-color);
-  ul {
-    list-style-type: none;
-  }
-  header{
+  font-family: "Lato";
+  background: var(--secondary-color) !important;
+  color: white !important;
+  header {
     h1 {
       text-transform: uppercase;
     }
@@ -20,22 +17,28 @@ body {
       text-decoration: none;
       color: inherit;
     }
-    div{
-      img{
+    p{
+      width: 65%;
+    }
+    div {
+      img {
         width: 3rem;
         height: 3rem;
       }
     }
   }
-  main{
-    section#skills{
-      div.pictures{
+  header,main{
+    padding-top: 80px;
+  }
+  main {
+    section#skills {
+      div.pictures {
         width: 85%;
-        div{
-          img{
-          width: 4rem;
-          height: 4rem;
-        }
+        div {
+          img {
+            width: 4rem;
+            height: 4rem;
+          }
         }
       }
     }
