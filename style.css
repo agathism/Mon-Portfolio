@@ -8,14 +8,10 @@ body {
   ul {
     list-style-type: none;
   }
-  h3 {
-    padding: 35px 0;
-  }
-  header {
+  header, main{
     padding-top: 40px;
     h1 {
       text-transform: uppercase;
-      margin: 0;
     }
     a {
       text-decoration: none;
