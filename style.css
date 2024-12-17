@@ -8,57 +8,18 @@ body {
   ul {
     list-style-type: none;
   }
+  h3 {
+    padding: 35px 0;
+  }
   header {
-    padding-top: 55px;
-    width: 35%;
-    h1,
-    h2,
-    p,
-    nav {
-      padding-bottom: 15px;
-    }
+    padding-top: 40px;
     h1 {
       text-transform: uppercase;
+      margin: 0;
     }
     a {
       text-decoration: none;
       color: inherit;
-    }
-  }
-  main {
-    width: 45%;
-    left: 690px;
-    padding-top: 55px;
-    section#aboutMe,
-    section#skills,
-    section#projects,
-    section#contact {
-      padding: 20px 0;
-    }
-    section#skills {
-      div.pictures {
-        width: 35px;
-        display: flex;
-        flex-wrap: wrap;
-        ul{   
-          li{
-            img {
-              width: 70px;
-              height: 63px;
-            }
-          }
-        }
-      }
-    }
-    section#projects {
-      div.allProjects {
-        span {
-          img {
-            width: 10rem;
-            height: 7rem;
-          }
-        }
-      }
     }
   }
 }
