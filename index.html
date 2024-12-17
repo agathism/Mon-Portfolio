@@ -39,7 +39,7 @@
               </li>
             </ul>
           </nav>
-          <div class="mt-8 g-3">
+          <div>
             <img src="Images/icons8-github-56.png" alt="GitHub" />
             <img src="Images/icons8-linkedin56.png" alt="Linkedin" />
             <img src="Images/icons8-codepen56.png" alt="CodePen" />
@@ -48,13 +48,11 @@
       </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
         <main>
-          <section id="aboutMe" class="mb-5">
+          <section id="aboutMe">
             <p class="mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
               minus odit ad quas quisquam perspiciatis maiores unde, doloribus
-              atque nulla deleniti eos maxime dignissimos corrupti architecto
-              optio, dicta ab fugit? Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Qm ex incidunt voluptatibus!
+              atque nulla 
             </p>
             <p class="mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
@@ -73,9 +71,14 @@
               adipisicing elit. Qui exercitationem nostrum repellat ipsam
               aspernatur tenetur facere dignissimos consectetur possimus?
             </p>
+            <p class="mb-4">
+              deleniti eos maxime dignissimos corrupti architecto
+              optio, dicta ab fugit? Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Qm ex incidunt voluptatibus!
+            </p>
           </section>
           <section id="skills" class="mb-5">
-            <p class="mb-4">
+            <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
               excepturi corrupti? Hic placeat consequatur saepe quae architecto,
               et harum vel nostrum. elit. Qui exercitationem nostrum repellat ipsam
@@ -83,7 +86,7 @@
               adipisicing elit. Qui exercitationem nostrum repellat ipsam
               aspernatur 
             </p>
-            <div class="pictures d-flex flex-wrap column-gap-3 border mx-4 p-4 rounded my-4" >
+            <div class="pictures d-flex flex-wrap column-gap-3 border rounded" >
                 <div><img src="Images/icons8-html.svg" alt="Html" /></div>
                 <div>
                   <img src="Images/icons8-javascript56.png" alt="Javascript" />
@@ -99,7 +102,6 @@
                 </div>
                 <div><img src="Images/icons8-sql-56.png" alt="SQL" /></div>
             </div>
-            <button type="button" class="btn btn-primary mx-5">CV</button>
           </section>
           <section id="projects" class="mb-5">
             <p>
@@ -107,89 +109,29 @@
               Accusantium corporis eaque quaerat cum voluptate dignissimos
               laboriosam distinctio labore modi esse.
             </p>
-            <div class="allProjects">
-              <span class="project">
-                <img src="" alt="" />
-                <p>Expliquer en quoi consiste le projet</p>
+            <div class="allProjects my-5">
+              <span class="project d-flex border rounded">
+                <img src="Images/bxl-tailwind-css96.svg" alt="Tailwind" />
+                <h6>Expliquer en quoi consiste le projet</h6>
               </span>
-              <span class="project">
-                <img src="" alt="" />
-                <p>Expliquer en quoi consiste le projet</p>
+              <span class="project d-flex border rounded">
+                <img src="Images/bxl-tailwind-css96.svg" alt="" />
+                <h6>Expliquer en quoi consiste le projet</h6>
               </span>
-              <span class="project">
-                <img src="" alt="" />
-                <p>Expliquer en quoi consiste le projet</p>
+              <span class="project d-flex border rounded">
+                <img src="Images/bxl-tailwind-css96.svg" alt="" />
+                <h6>Expliquer en quoi consiste le projet</h6>
               </span>
-              <span class="project">
-                <img src="" alt="" />
-                <p>Expliquer en quoi consiste le projet</p>
+              <span class="project d-flex border rounded">
+                <img src="Images/bxl-tailwind-css96.svg" alt="" />
+                <h6>Expliquer en quoi consiste le projet</h6>
               </span>
             </div>
+            <button type="button" class="btn btn-primary">CV</button>
           </section>
           <section id="contact">
-            <p>Contact</p>
-            <form class="col g-4">
-              <div class="col-md-3">
-                <label for="inputName" class="form-label">Nom*</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputName"
-                  required
-                />
-              </div>
-              <div class="col-md-3">
-                <label for="inputName" class="form-label">Prénom*</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputName"
-                  required
-                />
-              </div>
-              <div class="col-6">
-                <label for="inputEmail" class="form-label">E-mail*</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputEmail"
-                  pattern=".+@example\.com"
-                  required
-                />
-              </div>
-              <div class="col-6">
-                <label for="inputObject" class="form-label">Objet*</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputObject"
-                  required
-                  minlength="14"
-                  maxlength="35"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="inputMessage" class="form-label">Message</label>
-                <input type="text" class="form-control" id="inputMessage" />
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="gridCheck"
-                  />
-                  <label class="form-check-label" for="gridCheck">
-                    En soumettant ce formulaire, j'accepte que mes données
-                    personnelles soient utilisées pour me recontacter. Aucun
-                    autre traitement ne sera effectué avec ces informations.
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-              </div>
-            </form>
+            
+            
           </section>
         </main>
         <footer>
