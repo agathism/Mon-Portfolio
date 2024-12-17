@@ -18,4 +18,17 @@ body {
       color: inherit;
     }
   }
+  main{
+    section#skills{
+      div.pictures{
+        width: 80%;
+        div{
+          img{
+          width: 4rem;
+          height: 5rem;
+        }
+        }
+      }
+    }
+  }
 }
