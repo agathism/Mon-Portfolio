@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
-  --primary-background: #131c37;
-  --button-background-color: #e28be0;
+  --primary-background: #0f2243;
+  --button-background-color: #ffaead;
 }
 
 body {
-  background-color: #131c37;
+  background-color: var(--primary-background);
   color: white;
   margin: 15px;
   scroll-behavior: smooth;
@@ -95,15 +95,19 @@ body {
           }
         }
       }
+      img{
+        width: 5rem;
+        height: 4rem;
+      }
     }
     hgroup {
       width: 55%;
       margin: 150px 200px;
     }
   }
-  main {
+  main{
     section#aboutMe {
-      margin: 50px;
+      margin: 125px 0;
       div.profile {
         display: flex;
         flex-direction: column;
@@ -114,23 +118,41 @@ body {
       }
     }
     section#skills {
+      margin: 125px 0;
       h4 {
         display: flex;
         justify-content: center;
       }
-      div:first-of-type {
+      div.resume{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-right: 200px;
         p {
           width: 45%;
+          margin: 50px 0;
         }
         div.pictures {
+          width: 40%;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 10px;
+          gap: 10px;
           img {
-            width: 4rem;
-            height: 4rem;
+            width: 5rem;
+            height: 5rem;
           }
+        }
+      }
+    }
+    section#projects{
+      div.myProjects{
+        display: flex;
+        flex-direction: column;
+        margin-left: 200px;
+        p{
+          width: 45%;
+          margin: 50px 0;
         }
       }
     }
