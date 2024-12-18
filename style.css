@@ -5,21 +5,58 @@
   --secondary-color: #2f3556;
 }
 
-body{
-  background-color: #131c37 !important;
-  color: white !important;
-  header{
-    nav{
-      ul{
+body {
+  background-color: #131c37;
+  color: white;
+  margin: 15px;
+  scroll-behavior: smooth;
+  font-size: 1.3em;
+  header {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      ul {
         list-style-type: none;
-        li{
-          a{
+        display: flex;
+        margin: 0;
+        align-items: center;
+        li {
+          margin: 0 8px;
+          a {
             text-decoration: none;
             color: inherit;
           }
-          button{
-            color: inherit;
-            background-color: aliceblue !important;
+          button {
+            color: black;
+          }
+        }
+      }
+    }
+    hgroup {
+      width: 75%;
+      margin: 150px 200px;
+    }
+  }
+  main {
+    section#aboutMe {
+      margin: 50px;
+      div.profile {
+        display: flex;
+        flex-direction: column;
+        margin-left: 200px;
+        span {
+          width: 35%;
+          p {
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+    section#skills {
+      span.allSkills {
+        span {
+          div.pictures {
           }
         }
       }
