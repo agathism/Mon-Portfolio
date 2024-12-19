@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Aichatou Soumaré</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="m-4">
     <header>
-      <nav>
+      <nav class="flex justify-between m-0">
         <img src="Images/icons8-angularjs.svg" alt="" />
-        <ul>
-          <li>
+        <ul class="flex items-center list-none m-0 text-base">
+          <li class="my-0 mx-2">
             <a href="#aboutMe">01. À Propos</a>
           </li>
-          <li>
+          <li class="my-0 mx-2">
             <a href="#skills">02. Compétences</a>
           </li>
-          <li>
+          <li class="my-0 mx-2">
             <a href="#projects">03. Projets</a>
           </li>
-          <li>
+          <li class="my-0 mx-2">
             <a href="#contact">04. Contact</a>
           </li>
-          <li> <button>
+          <li class="my-0 mx-2"><button>
             <p>Mon CV</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M8.267 14.68c-.184 0-.308.018-.372.036v1.178c.076.018.171.023.302.023.479 0 .774-.242.774-.651 0-.366-.254-.586-.704-.586zm3.487.012c-.2 0-.33.018-.407.036v2.61c.077.018.201.018.313.018.817.006 1.349-.444 1.349-1.396.006-.83-.479-1.268-1.255-1.268z"></path><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM9.498 16.19c-.309.29-.765.42-1.296.42a2.23 2.23 0 0 1-.308-.018v1.426H7v-3.936A7.558 7.558 0 0 1 8.219 14c.557 0 .953.106 1.22.319.254.202.426.533.426.923-.001.392-.131.723-.367.948zm3.807 1.355c-.42.349-1.059.515-1.84.515-.468 0-.799-.03-1.024-.06v-3.917A7.947 7.947 0 0 1 11.66 14c.757 0 1.249.136 1.633.426.415.308.675.799.675 1.504 0 .763-.279 1.29-.663 1.615zM17 14.77h-1.532v.911H16.9v.734h-1.432v1.604h-.906V14.03H17v.74zM14 9h-1V4l5 5h-4z"></path></svg>
             </svg>
           </button></li>
         </ul>
       </nav>
-      <hgroup>
+      <hgroup class="w-6/12 my-36 mx-48">
         <h1>Nom Et Prenom</h1>
         <h3>Titre</h3>
         <p>
@@ -44,10 +45,10 @@
       </hgroup>
     </header>
     <main>
-      <section id="aboutMe">
-        <hgroup class="profile">
-          <h4>01. À Propos</h4>
-          <span>
+      <section id="aboutMe" class="my-32 mx-0">
+        <hgroup class="profile flex flex-col ml-56">
+          <h4 class="flex justify-start my-4">01. À Propos</h4>
+          <span class="w-2/4">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
               minus odit ad quas quisquam perspiciatis maiores unde, doloribus
@@ -73,9 +74,9 @@
           </span>
         </hgroup>
       </section>
-      <section id="skills">
-        <h4>02. Compétences</h4>
-        <div class="resume">
+      <section id="skills" class="my-32 mx-0">
+        <h4 class="flex justify-center">02. Compétences</h4>
+        <div class="resume flex flex-col items-end mr-48">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
             excepturi corrupti? Hic placeat consequatur saepe quae architecto,
@@ -84,7 +85,7 @@
             adipisicing elit. Qui exercitationem nostrum repellat ipsam
             aspernatur
           </p>
-          <div class="pictures">
+          <div class="pictures flex flex-wrap p-2.5">
             <div><img src="Images/icons8-angularjs.svg" alt="Html" /></div>
             <div>
               <img src="Images/icons8-angularjs.svg" alt="Javascript" />
@@ -102,46 +103,46 @@
           </div>
         </div>
       </section>
-      <section id="projects">
-        <div class="myProjects">
+      <section id="projects" class="my-32 mx-0">
+        <div class="myProjects flex flex-col ml-48">
         <h4>03. Projets</h4>
         <p class="resume">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           corporis eaque quaerat cum voluptate dignissimos laboriosam distinctio
           labore modi esse.
         </p>
-        <div class="allProjects">
-          <a href="" class="project">
+        <div class="allProjects flex flex-wrap gap-4">
+          <a href="" class="project w-1/4 items-center no-underline text-center rounded-md p-3">
             <img src="Images/bxl-tailwind-css96.svg" alt="Tailwind" />
             <h6>Expliquer en quoi consiste le projet</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
               corporis eaque</p>
           </a>
-          <a href="" class="project">
+          <a href="" class="project  w-1/4 items-center no-underline text-center rounded-md p-3">
             <img src="Images/bxl-tailwind-css96.svg" alt="" />
             <h6>Expliquer en quoi consiste le projet</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
               corporis eaque</p>
           </a>
-          <a href="" class="project">
+          <a href="" class="project w-1/4 items-center no-underline text-center rounded-md p-3">
             <img src="Images/bxl-tailwind-css96.svg" alt="" />
             <h6>Expliquer en quoi consiste le projet</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
               corporis eaque</p>
           </a>
-          <a href="" class="project">
+          <a href="" class="project w-1/4 items-center no-underline text-center rounded-md p-3">
             <img src="Images/bxl-tailwind-css96.svg" alt="" />
             <h6>Expliquer en quoi consiste le projet</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
               corporis eaque</p>
           </a>
-          <a href="" class="project">
+          <a href="" class="project w-1/4 items-center no-underline text-center rounded-md p-3">
             <img src="Images/bxl-tailwind-css96.svg" alt="" />
             <h6>Expliquer en quoi consiste le projet</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
               corporis eaque</p>
           </a>
-          <a href="" class="project">
+          <a href="" class="project w-1/4 items-center no-underline text-center rounded-md p-3">
             <img src="Images/bxl-tailwind-css96.svg" alt="" />
             <h6>Expliquer en quoi consiste le projet</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
@@ -151,7 +152,7 @@
       </section>
       <section id="contact">
         <h4>04. Contactez-moi</h4>
-        <div class="linkContact">
+        <div class="linkContact flex flex-col items-end mr-">
         <p class="smallTalk">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           corporis eaque quaerat cum voluptate dignissimos laboriosam distinctio
