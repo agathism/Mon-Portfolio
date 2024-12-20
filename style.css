@@ -7,7 +7,8 @@
 :root {
   --primary-background: #0a192f;
   --secondary-background: #233554;
-  --button-background-color: #a73996;
+  --button-background-color: #ae329b;
+  --tag-colors: #f4c3ed;
 }
 
 html {
@@ -19,7 +20,6 @@ body {
   color: white;
   font-size: 1.4em;
   font-family: "Jura", sans-serif;
-  /* From Uiverse.io by alexreyes091 */
   .btn {
     padding: 9px 15px;
     font-weight: 700;
@@ -44,8 +44,8 @@ body {
       rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
   }
   header {
-    hgroup{
-      p.start{
+    hgroup {
+      p.start {
         color: var(--button-background-color);
       }
     }
@@ -72,25 +72,101 @@ body {
     }
     section#projects {
       a.project {
-        background-color: var(--secondary-background);
-        border: #233554 1px solid;
-        h6:hover {
+        width: 250px;
+        height: 350px;
+        aspect-ratio: 2/3;
+        background: var(--secondary-background);
+        color: var(--textColor);
+        border: 1px solid var(--primary-background);
+        padding: 25px;
+        box-shadow: 8px 8px 0 var(----button-background-color);
+        transition: box-shadow 0.4s, transform 0.4s;
+        border-radius: 8px;
+        display: inline-block;
+        font-size: 0.7em;
+        h6 {
+          font-weight: 600;
+        }
+        img {
+          width: 45px;
+        }
+        div.flexIt {
+          display: flex;
+          gap: 7px;
+          font-size: 0.6em;
+          font-weight: 400;
+          p {
+            border: var(--button-background-color) 1px solid;
+            padding: 7px;
+            border-radius: 7px;
+            color: var(--tag-colors);
+            background-color: var(--button-background-color);
+          }
+        }
+      }
+      a.project:hover {
+        transform: translate(-2px, -4px);
+        box-shadow: 16px 16px 0 var(--button-background-color);
+        h6 {
           color: var(--button-background-color);
         }
-        img{
-          width: 35px;
-          height: 65px;
-        }
+      }
+
+      a.project:active {
+        transform: translate(-2px, -4px);
+        border: 2px solid var(--primary-background);
+        box-shadow: 4px 4px 0 var(--cardShadowActive);
+      }
+
+      a.project > img,
+      a.project > h6,
+      a.project > p {
+        margin-bottom: 0.7em;
+        cursor: default;
+        user-select: none;
+      }
+
+      a.project > .title {
+        margin-top: 1.5em;
+        font-weight: bold;
+      }
+
+      a.project > .description {
+        line-height: 1.5em;
+        min-height: 6em;
+      }
+
+      a.project > .icon {
+        font-size: 3em;
+        margin-bottom: 0.2em;
+      }
+
+      a.project > .flexIT {
+        margin-bottom: 1rem;
+        color: var(--linkColor);
+        font-size: 0.8em;
+        font-weight: 600;
+      }
+
+      a.project:hover > .link:after {
+        transform: translate(0.2em, -0.2em);
+      }
+      h6:hover {
+        color: var(--button-background-color);
+      }
+      img {
+        width: 35px;
+        height: 65px;
       }
     }
   }
   footer {
     font-size: 0.8em;
-    img{
+    img {
       width: 40px;
       height: 40px;
     }
-    img:hover{
+    img:hover {
       color: var(--button-background-color);
     }
   }
