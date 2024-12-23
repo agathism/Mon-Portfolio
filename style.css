@@ -43,6 +43,13 @@ body {
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
       rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
   }
+  h4::before {
+    position: relative;
+    bottom: 4px;
+    margin-right: 10px;
+    margin-top: 4px;
+    color: var(--button-background-color);
+  }
   header {
     hgroup {
       p.start {
@@ -64,13 +71,35 @@ body {
     }
   }
   main {
+    section#aboutMe {
+      h4::after {
+        display: inline;
+        width: 175px;
+        height: 2px;
+        background-color: lightgrey;
+        border-radius: 10px;
+        margin-right: 0 8px;
+      }
+      h4::before {
+        counter-increment: section 1;
+        content: "0" counter(section) ".";
+      }
+    }
     section#skills {
       img {
         width: 5rem;
         height: 5rem;
       }
+      h4::before {
+        counter-increment: section 2;
+        content: "0" counter(section) ".";
+      }
     }
     section#projects {
+      h4::before {
+        counter-increment: section 3;
+        content: "0" counter(section) ".";
+      }
       a.project {
         width: 250px;
         height: 350px;
@@ -157,6 +186,12 @@ body {
       img {
         width: 35px;
         height: 65px;
+      }
+    }
+    section#contact {
+      h4::before {
+        counter-increment: section 4;
+        content: "0" counter(section) ".";
       }
     }
   }
