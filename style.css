@@ -120,17 +120,13 @@ body {
         content: "0" counter(section) ".";
       }
       a.project {
-        width: 250px;
+        width: 275px;
         height: 350px;
-        aspect-ratio: 2/3;
         background: var(--secondary-background);
         color: var(--textColor);
         border: 1px solid var(--primary-background);
-        padding: 25px;
         box-shadow: 8px 8px 0 var(----button-background-color);
         transition: box-shadow 0.4s, transform 0.4s;
-        border-radius: 8px;
-        display: inline-block;
         font-size: 0.7em;
         h6 {
           font-weight: 600;
