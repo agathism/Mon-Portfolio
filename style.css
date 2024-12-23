@@ -62,6 +62,26 @@ body {
           a:hover {
             color: var(--button-background-color);
           }
+          a.item1:before {
+            counter-increment: section 1;
+            content: "0" counter(section) ". ";
+            color: var(--button-background-color);
+          }
+          a.item2:before {
+            counter-increment: section 2;
+            content: "0" counter(section) ". ";
+            color: var(--button-background-color);
+          }
+          a.item3:before {
+            counter-increment: section 3;
+            content: "0" counter(section) ". ";
+            color: var(--button-background-color);
+          }
+          a.item4:before {
+            counter-increment: section 4;
+            content: "0" counter(section) ". ";
+            color: var(--button-background-color);
+          }
         }
       }
       img {
@@ -73,12 +93,11 @@ body {
   main {
     section#aboutMe {
       h4::after {
-        display: inline;
+        display: block;
         width: 175px;
         height: 2px;
-        background-color: lightgrey;
+        background-color: white;
         border-radius: 10px;
-        margin-right: 0 8px;
       }
       h4::before {
         counter-increment: section 1;
@@ -203,6 +222,9 @@ body {
     }
     img:hover {
       color: var(--button-background-color);
+      transition: fill 0.3s ease;
+        fill: var(--tag-colors);
+        transform: scale(1.1);
     }
   }
 }
