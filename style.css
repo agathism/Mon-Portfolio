@@ -239,6 +239,13 @@ body {
 @media screen and (max-width: 360px){
   body{
     font-size: 1em;
+    main{
+      section#skills{
+        img{
+          width: 90px;
+          height: 90px;
+        }
+      }
+    }
   }
-  
 }
