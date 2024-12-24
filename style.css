@@ -242,9 +242,12 @@ body {
     main{
       section#skills{
         img{
-          width: 90px;
-          height: 90px;
+          width: 100px;
+          height: 105px;
         }
+      }
+      section#projects{
+        
       }
     }
   }
