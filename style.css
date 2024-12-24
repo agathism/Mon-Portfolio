@@ -9,6 +9,7 @@
   --secondary-background: #233554;
   --button-background-color: #ae329b;
   --tag-colors: #f4c3ed;
+  --section-line: rgb(214, 214, 214);
 }
 
 html {
@@ -44,11 +45,18 @@ body {
       rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
   }
   h4::before {
-    position: relative;
-    bottom: 4px;
-    margin-right: 10px;
-    margin-top: 4px;
+    margin: 20px;
     color: var(--button-background-color);
+    padding: 0;
+    margin: 0;
+  }
+  h4::after {
+    content: "";
+    display: inline;
+    width: 350px;
+    height: 1px;
+    background-color: var(--section-line);
+    border-radius: 10px;
   }
   header {
     hgroup {
@@ -61,6 +69,7 @@ body {
         li {
           a:hover {
             color: var(--button-background-color);
+            transition: 0.3s;
           }
           a.item1:before {
             counter-increment: section 1;
@@ -92,13 +101,6 @@ body {
   }
   main {
     section#aboutMe {
-      h4::after {
-        display: block;
-        width: 175px;
-        height: 2px;
-        background-color: white;
-        border-radius: 10px;
-      }
       h4::before {
         counter-increment: section 1;
         content: "0" counter(section) ".";
@@ -135,8 +137,6 @@ body {
           width: 45px;
         }
         div.flexIt {
-          display: flex;
-          gap: 7px;
           font-size: 0.6em;
           font-weight: 400;
           p {
@@ -221,6 +221,17 @@ body {
       transition: fill 0.3s ease;
         fill: var(--tag-colors);
         transform: scale(1.1);
+    }
+    ul::after{
+      content: "";
+        display: inline;
+        width: 2px;
+        height: 150px;
+        background-color: var(--section-line);
+        border-radius: 10px;
+    }
+    p{
+      width: 300px;
     }
   }
 }
