@@ -219,35 +219,39 @@ body {
     img:hover {
       color: var(--button-background-color);
       transition: fill 0.3s ease;
-        fill: var(--tag-colors);
-        transform: scale(1.1);
+      fill: var(--tag-colors);
+      transform: scale(1.1);
     }
-    ul::after{
+    ul::after {
       content: "";
-        display: inline;
-        width: 2px;
-        height: 150px;
-        background-color: var(--section-line);
-        border-radius: 10px;
+      display: inline;
+      width: 2px;
+      height: 150px;
+      background-color: var(--section-line);
+      border-radius: 10px;
     }
-    p{
+    p {
       width: 300px;
     }
   }
 }
 
-@media screen and (max-width: 360px){
-  body{
+@media screen and (max-width: 360px) {
+  body {
     font-size: 1em;
-    main{
-      section#skills{
-        img{
+    main {
+      section#skills {
+        img {
           width: 100px;
           height: 105px;
         }
       }
-      section#projects{
-        
+      section#projects {
+      }
+    }
+    footer {
+      ul::after {
+        content: none;
       }
     }
   }
