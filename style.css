@@ -122,7 +122,7 @@ body {
         content: "0" counter(section) ".";
       }
       a.project {
-        width: 275px;
+        width: 305px;
         height: 350px;
         background: var(--secondary-background);
         color: var(--textColor);
