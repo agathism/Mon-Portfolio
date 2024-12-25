@@ -122,7 +122,7 @@ body {
         content: "0" counter(section) ".";
       }
       a.project {
-        width: 305px;
+        width: 275px;
         height: 350px;
         background: var(--secondary-background);
         color: var(--textColor);
@@ -238,7 +238,7 @@ body {
 
 @media screen and (max-width: 360px) {
   body {
-    font-size: 1em;
+    font-size: 1.1em;
     main {
       section#skills {
         img {
@@ -246,10 +246,19 @@ body {
           height: 105px;
         }
       }
+      section#projects{
+        div.allProjects{
+          a{
+            font-size: 0.9em;
+          }
+        }
+      }
     }
     footer {
       ul::after {
         content: none;
+        width: 0;
+        height: 0;
       }
     }
   }
