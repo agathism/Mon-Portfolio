@@ -1,4 +1,4 @@
-const checkbox = document.querySelector(".checkbox");
+const checkbox = document.querySelector("#checkbox");
 const navMenu = document.querySelector(".navMenu");
 
 checkbox.addEventListener("click", () =>{
