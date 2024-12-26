@@ -239,32 +239,51 @@ body {
 @media screen and (max-width: 360px) {
   body {
     font-size: 1.1em;
+    .btn {
+      padding: 9px 15px;
+      font-weight: 700;
+      background: rgb(233, 233, 233);
+      color: var(--button-background-color);
+      cursor: pointer;
+      border-radius: 0.5rem;
+      border-bottom: 2px solid blueviolet;
+      border-right: 2px solid blueviolet;
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+      transition-duration: 1s;
+      transition-property: border-top, border-left, border-bottom, border-right,
+        box-shadow;
+    }
+    .btn:hover {
+      border-top: 2px solid blueviolet;
+      border-left: 2px solid blueviolet;
+      border-bottom: 2px solid rgb(238, 103, 238);
+      border-right: 2px solid rgb(238, 103, 238);
+      box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+        rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+    }
     header{
       ul.navMenu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 80px;
         gap: 8px;
+        padding-bottom: 40px;
+        padding-top: 0;
         flex-direction: column;
         background-color: var(--primary-background);
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        transition-timing-function: linear;
+        transition-duration: 0.15s;
+        transition-property: opacity, filter;
       }
       ul.navMenu.active{
         left: 0;
       }
       li.navItem{
         margin: 16px;
-      }
-      div#checkbox.active{
-        position: fixed;
-        z-index: 1;
-        margin-right: -15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
       }
       div.toggle {
         transition-duration: .5s;
