@@ -9,25 +9,30 @@
   </head>
   <body class="m-4">
     <header>
-      <nav class="flex justify-between m-0">
+      <nav class="navbar flex justify-between m-0">
         <img src="Images/icons8-angularjs96.svg" alt="" />
-        <ul class="flex items-center list-none m-0 text-base font-medium max-sm:inline-block max-sm:text-left max-sm:relative">
-          <li class="my-0 mx-2">
+        <ul class="navMenu flex items-center list-none m-0 text-base font-medium  max-sm:text-left">
+          <li class="navItem my-0 mx-2">
             <a href="#aboutMe" class="item1">À Propos</a>
           </li>
-          <li class="my-0 mx-2">
+          <li class="navItem my-0 mx-2">
             <a href="#skills" class="item2">Compétences</a>
           </li>
-          <li class="my-0 mx-2">
-            <a href="#projects" class="item3">Projets</a>
+          <li class="navItem my-0 mx-2">
+            <a href="navItem #projects" class="item3">Projets</a>
           </li>
-          <li class="my-0 mx-2">
+          <li class="navItem my-0 mx-2">
             <a href="#contact" class="item4">Contact</a>
           </li>
-          <li class="my-0 mx-2"><a href="Aichatou_soumare.stage1.pdf.pdf" target="_blank"><button class="btn">
+          <li class="navItem my-0 mx-2"><a href="Aichatou_soumare.stage1.pdf.pdf" target="_blank"><button class="btn">
             <p>Mon CV</p>
           </button></a></li>
         </ul>
+       <div id="checkbox" class="toggle max-sm:relative max-sm:cursor-pointer max-sm:w-10 max-sm:h-10 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-2.5">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+       </div>
       </nav>
       <hgroup class="w-6/12 my-44 mx-48 max-sm:w-11/12 max-sm:mt-20 max-sm:ml-3">
         <p class="start italic text-3xl font-semibold max-sm:text-lg">Bienvenue, je suis</p>
@@ -182,7 +187,7 @@
           Contact
           </button>
         </a>
-      </div>
+       </div>
       </section>
     </main>
     <footer class="text-center">
@@ -199,5 +204,6 @@
       </hgroup>
     </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
