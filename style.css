@@ -274,10 +274,7 @@ body {
         background-color: var(--primary-background);
         width: 100%;
         text-align: center;
-        transition: 0.3s;
-        transition-timing-function: linear;
-        transition-duration: 0.15s;
-        transition-property: opacity, filter;
+        transition: 0.2s ease-in-out;
       }
       ul.navMenu.active{
         left: 0;
@@ -285,47 +282,47 @@ body {
       li.navItem{
         margin: 16px;
       }
-      div.toggle {
+      div#checkbox {
         transition-duration: .5s;
+        div.bars {
+          width: 100%;
+          height: 4px;
+          background-color: var(--button-background-color);
+          border-radius: 4px;
+        }
+        
+        #barTwo {
+          transition-duration: .6s;
+        }
+        
+        #barOne, #barThree {
+          width: 70%;
+        }
       } 
-      .bars {
-        width: 100%;
-        height: 4px;
-        background-color: var(--button-background-color);
-        border-radius: 4px;
-      }
       
-      #bar2 {
-        transition-duration: .6s;
-      }
-      
-      #bar1,#bar3 {
-        width: 70%;
-      }
-      
-      #checkbox:checked + .toggle .bars {
+      div#checkbox:checked + .bars {
         position: absolute;
         transition-duration: .5s;
       }
       
-      #checkbox:checked + .toggle #bar2 {
+      div#checkbox:checked + #barTwo {
         transform: scaleX(0);
         transition-duration: .5s;
       }
       
-      #checkbox:checked + .toggle #bar1 {
+      div#checkbox:checked + #barOne {
         width: 100%;
         transform: rotate(45deg);
         transition-duration: .5s;
       }
       
-      #checkbox:checked + .toggle #bar3 {
+      div#checkbox:checked + #barThree {
         width: 100%;
         transform: rotate(-45deg);
         transition-duration: .5s;
       }
       
-      #checkbox:checked + .toggle {
+      div#checkbox:checked + .toggle {
         transition-duration: .5s;
         transform: rotate(180deg);
       }
