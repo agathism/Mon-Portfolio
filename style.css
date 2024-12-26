@@ -226,7 +226,7 @@ body {
       content: "";
       display: inline;
       width: 2px;
-      height: 150px;
+      height: 100px;
       background-color: var(--section-line);
       border-radius: 10px;
     }
@@ -344,7 +344,7 @@ body {
     }
     footer {
       ul::after {
-        position: relative;
+        position: fixed;
         left: -100%;
       }
     }
