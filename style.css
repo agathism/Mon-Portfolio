@@ -236,7 +236,7 @@ body {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
   body {
     font-size: 1.1em;
     .btn {
@@ -344,9 +344,8 @@ body {
     }
     footer {
       ul::after {
-        content: none;
-        width: 0;
-        height: 0;
+        position: relative;
+        left: -100%;
       }
     }
   }
