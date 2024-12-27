@@ -342,11 +342,14 @@ body {
         }
       }
     }
-    footer {
+    footer{
       ul::after {
-        position: fixed;
+        position: absolute;
+        z-index: auto;
         left: -100%;
       }
     }
   }
 }
+
+
