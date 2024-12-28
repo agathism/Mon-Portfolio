@@ -335,13 +335,15 @@ body {
   }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (min-width: 853px){
   body{
-    main{
-      section#projects{
-        div.allProjects{
-          /* display: grid;
-          grid-template-columns: 2; */
+    header{
+      nav{
+        
+        input#checkbox{
+          position: absolute;
+          z-index: auto;
+          left: -100%;
         }
       }
     }
