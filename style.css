@@ -236,7 +236,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
   body {
     font-size: 1.1em;
     header {
@@ -332,5 +332,24 @@ body {
         left: -100%;
       }
     }
+  }
+}
+
+@media screen and (min-width: 620px){
+  body{
+    main{
+      section#projects{
+        div.allProjects{
+          display: grid;
+          grid-template-columns: 2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 620px){
+  body{
+    
   }
 }
