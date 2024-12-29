@@ -230,8 +230,9 @@ body {
       background-color: var(--section-line);
       border-radius: 10px;
     }
-    p {
-      width: 300px;
+    p:hover{
+      color: var(--button-background-color);
+      transition: 0.3s;
     }
   }
 }
@@ -339,13 +340,12 @@ body {
   body{
     header{
       nav{
-        
-        /* input#checkbox{
+        input#checkbox, label.toggle{
           position: absolute;
-          z-index: auto;
-          left: -100%; */
+          left: -100%;
+        }
         }
       }
     }
   }
-}
+
