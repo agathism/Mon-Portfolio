@@ -312,6 +312,7 @@ body {
       }
       section#projects {
         div.allProjects {
+          
           a {
             font-size: 0.9em;
           }
@@ -328,7 +329,7 @@ body {
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 772px) {
   body {
     header {
       nav {
