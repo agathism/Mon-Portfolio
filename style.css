@@ -108,8 +108,8 @@ body {
     }
     section#skills {
       img {
-        width: 45px;
-        height: 45px;
+        width: 80px;
+        height: 80px;
       }
       h4::before {
         counter-increment: section 2;
@@ -147,6 +147,56 @@ body {
             background-color: var(--button-background-color);
           }
         }
+      }
+      a.project:hover {
+        transform: translate(-2px, -4px);
+        box-shadow: 16px 16px 0 var(--button-background-color);
+        h6 {
+          color: var(--button-background-color);
+        }
+      }
+
+      a.project:active {
+        transform: translate(-2px, -4px);
+        border: 2px solid var(--primary-background);
+        box-shadow: 4px 4px 0 var(--cardShadowActive);
+      }
+
+      a.project > img,
+      a.project > h6,
+      a.project > p {
+        margin-bottom: 0.7em;
+        cursor: default;
+        user-select: none;
+      }
+
+      a.project > .title {
+        margin-top: 1.5em;
+        font-weight: bold;
+      }
+
+      a.project > .description {
+        line-height: 1.5em;
+        min-height: 6em;
+      }
+
+      a.project > .icon {
+        font-size: 3em;
+        margin-bottom: 0.2em;
+      }
+
+      a.project > .flexIT {
+        margin-bottom: 1rem;
+        color: var(--linkColor);
+        font-size: 0.8em;
+        font-weight: 600;
+      }
+
+      a.project:hover > .link:after {
+        transform: translate(0.2em, -0.2em);
+      }
+      h6:hover {
+        color: var(--button-background-color);
       }
       img {
         width: 35px;
@@ -286,61 +336,6 @@ body {
         label.toggle {
           position: absolute;
           left: -100%;
-        }
-      }
-    }
-    main{
-      section#projects{
-        div.allProjects{
-          a.project:hover {
-            transform: translate(-2px, -4px);
-            box-shadow: 16px 16px 0 var(--button-background-color);
-            h6 {
-              color: var(--button-background-color);
-            }
-          }
-          a.project:active {
-            transform: translate(-2px, -4px);
-            border: 2px solid var(--primary-background);
-            box-shadow: 4px 4px 0 var(--cardShadowActive);
-          }
-    
-          a.project > img,
-          a.project > h6,
-          a.project > p {
-            margin-bottom: 0.7em;
-            cursor: default;
-            user-select: none;
-          }
-    
-          a.project > .title {
-            margin-top: 1.5em;
-            font-weight: bold;
-          }
-    
-          a.project > .description {
-            line-height: 1.5em;
-            min-height: 6em;
-          }
-    
-          a.project > .icon {
-            font-size: 3em;
-            margin-bottom: 0.2em;
-          }
-    
-          a.project > .flexIT {
-            margin-bottom: 1rem;
-            color: var(--linkColor);
-            font-size: 0.8em;
-            font-weight: 600;
-          }
-    
-          a.project:hover > .link:after {
-            transform: translate(0.2em, -0.2em);
-          }
-          h6:hover {
-            color: var(--button-background-color);
-          }
         }
       }
     }
