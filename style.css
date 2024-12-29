@@ -122,7 +122,6 @@ body {
         content: "0" counter(section) ".";
       }
       a.project {
-        height: 24rem;
         background: var(--secondary-background);
         color: var(--textColor);
         border: 1px solid var(--primary-background);
