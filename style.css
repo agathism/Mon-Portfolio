@@ -212,7 +212,7 @@ body {
   }
   footer {
     font-size: 0.8em;
-    img {
+    img{
       width: 40px;
       height: 40px;
     }
@@ -312,7 +312,6 @@ body {
       }
       section#projects {
         div.allProjects {
-          
           a {
             font-size: 0.9em;
           }
@@ -348,6 +347,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        svg:hover{
+          color: var(--button-background-color);
+        }
       }
       ul::after {
         content: "";
