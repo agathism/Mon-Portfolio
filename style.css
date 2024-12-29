@@ -28,8 +28,8 @@ body {
     color: var(--button-background-color);
     cursor: pointer;
     border-radius: 0.5rem;
-    border-bottom: 2px solid blueviolet;
-    border-right: 2px solid blueviolet;
+    border-bottom: 2px solid var(--button-background-color);
+    border-right: 2px solid var(--button-background-color);
     border-top: 2px solid white;
     border-left: 2px solid white;
     transition-duration: 1s;
@@ -37,10 +37,10 @@ body {
       box-shadow;
   }
   .btn:hover {
-    border-top: 2px solid blueviolet;
-    border-left: 2px solid blueviolet;
-    border-bottom: 2px solid rgb(238, 103, 238);
-    border-right: 2px solid rgb(238, 103, 238);
+    border-top: 2px solid var(--button-background-color);
+    border-left: 2px solid var(--button-background-color);
+    border-bottom: 2px solid var(--button-background-color);
+    border-right: 2px solid var(--button-background-color);
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
       rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
   }
