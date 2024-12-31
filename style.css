@@ -131,8 +131,11 @@ body {
         h6 {
           font-weight: 600;
         }
-        img {
+        img.picFirst {
           width: 45px;
+        }
+        img.picSec{
+          width: 30px;
         }
         div.flexIt {
           font-size: 0.6em;
