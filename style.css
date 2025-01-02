@@ -16,6 +16,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#particles-js {
+  position: absolute;
+  width: fit-content;
+  background-size: cover;
+} 
+
 body {
   background-color: var(--primary-background);
   color: white;
@@ -94,8 +100,8 @@ body {
         }
       }
       img {
-        width: 5rem;
-        height: 4rem;
+        width: 85px;
+        height: 75px;
       }
     }
   }
@@ -134,7 +140,7 @@ body {
         img.picFirst {
           width: 45px;
         }
-        img.picSec{
+        img.picSec {
           width: 30px;
         }
         div.flexIt {
@@ -213,7 +219,7 @@ body {
   }
   footer {
     font-size: 0.8em;
-    img{
+    img {
       width: 36px;
       height: 36px;
     }
