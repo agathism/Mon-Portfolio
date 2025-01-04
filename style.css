@@ -19,8 +19,10 @@ html {
 #particles-js {
   position: absolute;
   width: fit-content;
+  height: 100%;
   background-size: cover;
-} 
+  background-position: 200%;
+}
 
 body {
   background-color: var(--primary-background);
