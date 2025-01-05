@@ -1,12 +1,12 @@
-const checkbox = document.querySelector("#checkbox");
-const navMenu = document.querySelector(".navMenu");
-const navItem = document.querySelectorAll(".navItem");
-let links = document.querySelectorAll(".navMenu a")
+let checkbox = document.querySelector('#checkbox');
+let navMenu = document.querySelector('.navMenu');
+let links = document.querySelectorAll('navItem');
 
 checkbox.addEventListener("click", () => {
   checkbox.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
+
 
 
 
