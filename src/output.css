@@ -773,14 +773,13 @@ html {
   scroll-behavior: smooth;
 }
 
-#particles-js {
+/* #particles-js {
   position: absolute;
-  width: -moz-fit-content;
   width: fit-content;
   height: 100%;
   background-size: cover;
   background-position: 100%;
-}
+} */
 
 body {
   background-color: var(--primary-background);
@@ -995,7 +994,7 @@ body {
   body {
     font-size: 1.1em;
     header {
-      nav {
+      nav{
         ul.navMenu {
           position: fixed;
           left: -100%;
@@ -1116,6 +1115,10 @@ body {
 }
 
 @media not all and (min-width: 768px){
+  .max-md\:fixed{
+    position: fixed;
+  }
+
   .max-md\:relative{
     position: relative;
   }
