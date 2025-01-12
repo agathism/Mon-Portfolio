@@ -20,13 +20,13 @@ html {
   scroll-behavior: smooth;
 }
 
-#particles-js {
-  position: relative;
+/* #particles-js {
+  position: absolute;
   width: fit-content;
   height: 100%;
   background-size: cover;
   background-position: 100%;
-}
+} */
 
 body {
   background-color: var(--primary-background);
@@ -246,7 +246,7 @@ body {
   body {
     font-size: 1.1em;
     header {
-      nav {
+      nav{
         ul.navMenu {
           position: fixed;
           left: -100%;
