@@ -67,6 +67,11 @@ body {
     background-color: var(--section-line);
     border-radius: 10px;
   }
+  section#skills, section#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   header {
     hgroup {
       p.start {
