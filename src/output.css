@@ -1368,6 +1368,34 @@ body {
     margin-left: 12rem;
   }
 
+  .xl\:mr-48{
+    margin-right: 12rem;
+  }
+
+  .xl\:mr-52{
+    margin-right: 13rem;
+  }
+
+  .xl\:mr-56{
+    margin-right: 14rem;
+  }
+
+  .xl\:ml-56{
+    margin-left: 14rem;
+  }
+
+  .xl\:ml-60{
+    margin-left: 15rem;
+  }
+
+  .xl\:ml-64{
+    margin-left: 16rem;
+  }
+
+  .xl\:mr-44{
+    margin-right: 11rem;
+  }
+
   .xl\:w-2\/5{
     width: 40%;
   }
@@ -1378,5 +1406,9 @@ body {
 
   .xl\:w-8\/12{
     width: 66.666667%;
+  }
+
+  .xl\:w-6\/12{
+    width: 50%;
   }
 } 
