@@ -11,7 +11,7 @@
 :root {
   --primary-background: #07162d;
   --secondary-background: #243758;
-  --button-background-color: #ae329b;
+  --button-background-color: #ba2ea5;
   --tag-colors: #fad1f4;
   --section-line: rgb(214, 214, 214);
   --nav-background: #041426;
@@ -250,7 +250,6 @@ body {
     font-size: 1.1em;
     header {
       nav{
-        background-color: var(--nav-background);
         ul.navMenu {
           position: fixed;
           left: -100%;
