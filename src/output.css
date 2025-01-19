@@ -572,10 +572,6 @@ video {
   margin: 0px;
 }
 
-.m-4{
-  margin: 1rem;
-}
-
 .mx-0{
   margin-left: 0px;
   margin-right: 0px;
@@ -584,6 +580,11 @@ video {
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .my-0{
@@ -758,11 +759,12 @@ video {
 }
 
 :root {
-  --primary-background: #0a192f;
+  --primary-background: #07162d;
   --secondary-background: #243758;
   --button-background-color: #ae329b;
   --tag-colors: #fad1f4;
   --section-line: rgb(214, 214, 214);
+  --nav-background: #041426;
 }
 
 html {
@@ -993,6 +995,7 @@ body {
     font-size: 1.1em;
     header {
       nav{
+        background-color: var(--nav-background);
         ul.navMenu {
           position: fixed;
           left: -100%;
@@ -1364,36 +1367,12 @@ body {
     margin-right: 9rem;
   }
 
-  .xl\:ml-48{
-    margin-left: 12rem;
-  }
-
-  .xl\:mr-48{
-    margin-right: 12rem;
-  }
-
-  .xl\:mr-52{
-    margin-right: 13rem;
-  }
-
-  .xl\:mr-56{
-    margin-right: 14rem;
-  }
-
-  .xl\:ml-56{
-    margin-left: 14rem;
-  }
-
-  .xl\:ml-60{
-    margin-left: 15rem;
-  }
-
   .xl\:ml-64{
     margin-left: 16rem;
   }
 
-  .xl\:mr-44{
-    margin-right: 11rem;
+  .xl\:mr-48{
+    margin-right: 12rem;
   }
 
   .xl\:w-2\/5{
@@ -1406,9 +1385,5 @@ body {
 
   .xl\:w-8\/12{
     width: 66.666667%;
-  }
-
-  .xl\:w-6\/12{
-    width: 50%;
   }
 } 
