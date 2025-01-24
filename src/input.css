@@ -253,7 +253,7 @@ body {
           padding-bottom: 40px;
           padding-top: 0;
           flex-direction: column;
-          background-color: var(--primary-background);
+          background-color: var(--nav-background);
           width: 100%;
           text-align: center;
           transition: 0.2s ease-in-out;

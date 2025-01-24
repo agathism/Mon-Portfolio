@@ -564,8 +564,16 @@ video {
   display: none;
 }
 
+.sticky{
+  position: sticky;
+}
+
 .left-10{
   left: 2.5rem;
+}
+
+.top-4{
+  top: 1rem;
 }
 
 .m-0{
@@ -997,7 +1005,7 @@ body {
           padding-bottom: 40px;
           padding-top: 0;
           flex-direction: column;
-          background-color: var(--primary-background);
+          background-color: var(--nav-background);
           width: 100%;
           text-align: center;
           transition: 0.2s ease-in-out;
@@ -1114,16 +1122,6 @@ body {
 }
 
 @media not all and (min-width: 1024px){
-  .max-lg\:mx-3{
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
-
-  .max-lg\:mx-12{
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
   .max-lg\:mx-4{
     margin-left: 1rem;
     margin-right: 1rem;
@@ -1160,13 +1158,12 @@ body {
 }
 
 @media not all and (min-width: 768px){
-  .max-md\:relative{
-    position: relative;
+  .max-md\:fixed{
+    position: fixed;
   }
 
-  .max-md\:mx-3{
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+  .max-md\:relative{
+    position: relative;
   }
 
   .max-md\:mr-2{
@@ -1331,41 +1328,6 @@ body {
     margin: 4rem;
   }
 
-  .md\:mx-16{
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
-  .md\:mx-20{
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .md\:mx-10{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .md\:ml-20{
-    margin-left: 5rem;
-  }
-
-  .md\:ml-10{
-    margin-left: 2.5rem;
-  }
-
-  .md\:ml-16{
-    margin-left: 4rem;
-  }
-
-  .md\:ml-8{
-    margin-left: 2rem;
-  }
-
-  .md\:ml-9{
-    margin-left: 2.25rem;
-  }
-
   .md\:w-11\/12{
     width: 91.666667%;
   }
@@ -1381,6 +1343,14 @@ body {
 }
 
 @media (min-width: 1024px){
+  .lg\:sticky{
+    position: sticky;
+  }
+
+  .lg\:top-4{
+    top: 1rem;
+  }
+
   .lg\:ml-36{
     margin-left: 9rem;
   }
@@ -1421,10 +1391,6 @@ body {
     margin-right: 12rem;
   }
 
-  .xl\:mr-40{
-    margin-right: 10rem;
-  }
-
   .xl\:w-2\/5{
     width: 40%;
   }
@@ -1435,10 +1401,6 @@ body {
 
   .xl\:w-8\/12{
     width: 66.666667%;
-  }
-
-  .xl\:justify-end{
-    justify-content: flex-end;
   }
 
   .xl\:justify-center{
