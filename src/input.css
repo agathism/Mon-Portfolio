@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 :root {
-  --primary-background: #07162d;
+  --primary-background: #0d203c;
   --secondary-background: #243758;
   --button-background-color: #ba2ea5;
   --tag-colors: #fad1f4;
@@ -67,11 +67,6 @@ body {
     height: 1px;
     background-color: var(--section-line);
     border-radius: 10px;
-  }
-  section#skills, section#contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   header {
     hgroup {
