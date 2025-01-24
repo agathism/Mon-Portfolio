@@ -9,12 +9,12 @@
 @tailwind utilities;
 
 :root {
-  --primary-background: #0d203c;
+  --primary-background: #082240;
   --secondary-background: #243758;
   --button-background-color: #ba2ea5;
   --tag-colors: #fad1f4;
   --section-line: rgb(214, 214, 214);
-  --nav-background: #041426;
+  --nav-background: #0b1c36;
 }
 
 html {
@@ -245,6 +245,7 @@ body {
     font-size: 1.1em;
     header {
       nav{
+        background-color: var(--nav-background);
         ul.navMenu {
           position: fixed;
           left: -100%;
@@ -253,7 +254,6 @@ body {
           padding-bottom: 40px;
           padding-top: 0;
           flex-direction: column;
-          background-color: var(--nav-background);
           width: 100%;
           text-align: center;
           transition: 0.2s ease-in-out;

@@ -576,6 +576,14 @@ video {
   top: 1rem;
 }
 
+.top-2{
+  top: 0.5rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
 .m-0{
   margin: 0px;
 }
@@ -766,12 +774,12 @@ video {
 }
 
 :root {
-  --primary-background: #0d203c;
+  --primary-background: #082240;
   --secondary-background: #243758;
   --button-background-color: #ba2ea5;
   --tag-colors: #fad1f4;
   --section-line: rgb(214, 214, 214);
-  --nav-background: #041426;
+  --nav-background: #0b1c36;
 }
 
 html {
@@ -997,6 +1005,7 @@ body {
     font-size: 1.1em;
     header {
       nav{
+        background-color: var(--nav-background);
         ul.navMenu {
           position: fixed;
           left: -100%;
@@ -1005,7 +1014,6 @@ body {
           padding-bottom: 40px;
           padding-top: 0;
           flex-direction: column;
-          background-color: var(--nav-background);
           width: 100%;
           text-align: center;
           transition: 0.2s ease-in-out;
@@ -1166,6 +1174,14 @@ body {
     position: relative;
   }
 
+  .max-md\:left-4{
+    left: 1rem;
+  }
+
+  .max-md\:m-0{
+    margin: 0px;
+  }
+
   .max-md\:mr-2{
     margin-right: 0.5rem;
   }
@@ -1209,6 +1225,16 @@ body {
 
   .max-md\:gap-2\.5{
     gap: 0.625rem;
+  }
+
+  .max-md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .max-md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .max-md\:text-left{
@@ -1301,6 +1327,11 @@ body {
     margin-right: 3.5rem;
   }
 
+  .sm\:mx-10{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .sm\:grid{
     display: grid;
   }
@@ -1343,14 +1374,6 @@ body {
 }
 
 @media (min-width: 1024px){
-  .lg\:sticky{
-    position: sticky;
-  }
-
-  .lg\:top-4{
-    top: 1rem;
-  }
-
   .lg\:ml-36{
     margin-left: 9rem;
   }
