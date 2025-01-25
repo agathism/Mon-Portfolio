@@ -572,20 +572,8 @@ video {
   left: 2.5rem;
 }
 
-.top-4{
-  top: 1rem;
-}
-
-.top-8{
-  top: 2rem;
-}
-
 .top-2{
   top: 0.5rem;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .m-0{
@@ -627,9 +615,9 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-40{
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+.my-48{
+  margin-top: 12rem;
+  margin-bottom: 12rem;
 }
 
 .my-6{
@@ -786,13 +774,14 @@ html {
   scroll-behavior: smooth;
 }
 
-/* #particles-js {
+#particles-js {
   position: absolute;
-  width: fit-content;
+  width: -moz-max-content;
+  width: max-content;
   height: 100%;
   background-size: cover;
   background-position: 100%;
-} */
+}
 
 body {
   background-color: var(--primary-background);
@@ -1005,14 +994,13 @@ body {
     font-size: 1.1em;
     header {
       nav{
-        background-color: var(--nav-background);
         ul.navMenu {
           position: fixed;
           left: -100%;
           top: 80px;
           gap: 8px;
           padding: 40px 0;
-          background-color: var(--nav-background);
+          background-color: var(--primary-background);
           flex-direction: column;
           width: 100%;
           text-align: center;
@@ -1166,12 +1154,13 @@ body {
 }
 
 @media not all and (min-width: 768px){
-  .max-md\:fixed{
-    position: fixed;
-  }
-
   .max-md\:relative{
     position: relative;
+  }
+
+  .max-md\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .max-md\:mr-2{
@@ -1184,6 +1173,10 @@ body {
 
   .max-md\:h-12{
     height: 3rem;
+  }
+
+  .max-md\:h-screen{
+    height: 100vh;
   }
 
   .max-md\:w-10{
@@ -1215,8 +1208,17 @@ body {
     gap: 0.625rem;
   }
 
+  .max-md\:overflow-hidden{
+    overflow: hidden;
+  }
+
   .max-md\:text-left{
     text-align: left;
+  }
+
+  .max-md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .max-md\:after\:w-48::after{
@@ -1232,6 +1234,36 @@ body {
   .max-md\:after\:w-60::after{
     content: var(--tw-content);
     width: 15rem;
+  }
+
+  .max-md\:after\:w-40::after{
+    content: var(--tw-content);
+    width: 10rem;
+  }
+
+  .max-md\:after\:w-56::after{
+    content: var(--tw-content);
+    width: 14rem;
+  }
+
+  .max-md\:after\:w-10::after{
+    content: var(--tw-content);
+    width: 2.5rem;
+  }
+
+  .max-md\:after\:w-12::after{
+    content: var(--tw-content);
+    width: 3rem;
+  }
+
+  .max-md\:after\:w-24::after{
+    content: var(--tw-content);
+    width: 6rem;
+  }
+
+  .max-md\:after\:w-44::after{
+    content: var(--tw-content);
+    width: 11rem;
   }
 }
 

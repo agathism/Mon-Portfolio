@@ -1,5 +1,5 @@
 <!DOCTYPE html >
-<html lang="fr">
+<html lang="fr" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body>
-    <!-- <div id="particles-js"></div> -->
+     
     <header>
-      <nav class="navbar flex justify-between max-md:items-center sticky top-2 max-md:">
+      <nav class="navbar flex justify-between max-md:items-center sticky top-2 max-md:overflow-hidden">
         <img src="Images/As.svg" alt="Logo" />
-        <ul class="navMenu flex items-center list-none m-0 text-base font-medium max-md:text-left">
-          <li class="navItem my-0 mx-2">
-            <a href="#aboutMe" class="item1">À Propos</a>
+        <ul class="navMenu flex items-center list-none m-0 text-base font-medium max-md:text-left max-md:h-screen">
+          <li class="navItem my-0 mx-2 max-md:my-8">
+            <a href="#aboutMe" class="item1 max-md:text-2xl">À Propos</a>
           </li>
-          <li class="navItem my-0 mx-2">
+          <li class="navItem my-0 mx-2 max-md:text-2xl">
             <a href="#skills" class="item2">Compétences</a>
           </li>
-          <li class="navItem my-0 mx-2">
+          <li class="navItem my-0 mx-2 max-md:text-2xl">
             <a href="#projects" class="item3">Projets</a>
           </li>
-          <li class="navItem my-0 mx-2">
+          <li class="navItem my-0 mx-2 max-md:text-2xl">
             <a href="#contact" class="item4">Contact</a>
           </li>
           <li class="navItem my-0 mx-2"><a href="CV_aichatou_soumare.pdf" target="_blank"><button class="btn">
-            <p>Mon Cv</p>
+            <p class="max-md:text-2xl">Mon Cv</p>
           </button></a></li>
         </ul>
         <input type="checkbox" id="checkbox" />
@@ -35,7 +35,7 @@
         <div class="bars" id="bar3"></div>
        </label>
       </nav>
-      <hgroup class="xl:w-7/12 my-40 lg:ml-36 max-lg:w-11/12 max-sm:ml-3 sm:mx-10">
+      <hgroup class="xl:w-7/12 my-48 lg:ml-36 max-lg:w-11/12 max-sm:ml-3 sm:mx-10">
         <p class="start italic text-3xl font-semibold max-sm:text-lg">Bienvenue, je suis</p>
         <h1 class="text-7xl font-black my-4 max-lg:text-6xl">Aichatou Soumaré</h1>
         <h3 class="text-3xl my-6 font-medium font-semibold max-sm:text-xl">Développeuse Web</h3>
@@ -47,7 +47,7 @@
     <main class="max-lg:mx-4 md:m-16">
       <section id="aboutMe" class="my-34">
         <hgroup class="profile flex flex-col xl:mx-36 sm:w-fit max-sm:mt-20 max-sm:m-0">
-          <h4 class="flex justify-start items-center gap-3 font-semibold max-sm:after:w-40 max-md:after:w-46">À Propos</h4>
+          <h4 class="flex justify-start items-center gap-3 font-semibold max-md:after:w-44">À Propos</h4>
           <span class="xl:w-8/12 my-12 text-justify max-md:w-fit md:w-fit">
             <p>
               Depuis quelques années, le développement web est bien plus qu’un simple domaine d’étude pour moi : c’est une véritable passion.
@@ -61,7 +61,7 @@
         </hgroup>
       </section>
       <section id="skills" class="my-32">
-        <h4 class="flex items-center xl:justify-center gap-3 lg:mr-4 font-semibold max-sm:after:w-28 max-md:after:w-52">Compétences</h4>
+        <h4 class="flex items-center xl:justify-center gap-3 lg:mr-4 font-semibold max-md:after:w-44">Compétences</h4>
         <span class="flex flex-col items-center xl:ml-64 max-sm:m-0 max-sm:flex max-sm:flex-col">
           <p class="xl:w-7/12 my-12 text-justify max-md:w-fit md:w-fit">
             Le monde de la programmation étant en constante évolution, je consacre une partie de mon temps à l'apprentissage de nouvelles technologies et à l'amélioration de mes compétences existantes.
@@ -84,7 +84,7 @@
       </section>
       <section id="projects" class="my-32">
         <div class="myProjects flex flex-col xl:mx-36 max-sm:mt-20">
-        <h4 class="flex my-2 items-center font-semibold gap-3 max-sm:after:w-44 max-md:after:w-60">Projets</h4>
+        <h4 class="flex my-2 items-center font-semibold gap-3 max-md:after:w-44">Projets</h4>
         <p class="xl:w-8/12 my-12 text-justify max-md:w-fit md:w-fit">
           Vous trouverez ici quelques-uns de mes projets personnels. Je continue d'en développer dès que j'ai de nouvelles idées afin de me challenger.
         </p>
@@ -170,7 +170,7 @@
         </div>
       </section>  
       <section id="contact" class="my-32 mx-0">
-        <h4 class="flex items-center xl:justify-center gap-3 font-semibold max-sm:flex sm:justify-start max-sm:justify-start max-sm:ml-0 max-sm:after:w-28 max-md:after:w-48">Contactez-moi</h4>
+        <h4 class="flex items-center xl:justify-center gap-3 font-semibold max-sm:flex sm:justify-start max-sm:justify-start max-sm:ml-0 max-md:after:w-44">Contactez-moi</h4>
         <span class="flex flex-col items-end xl:mr-48 max-md:w-54">
         <p class="xl:w-7/12 my-12 xl:mx-0 text-justify sm:w-fit max-sm:w-fit max-md:w-fit md:w-fit">
           Si mon profil vous intéresse ou si vous avez des questions, n'hésitez pas à me contacter. Je répondrai dès que possible !
@@ -195,9 +195,9 @@
       </hgroup>
     </footer>
     <script src="script.js"></script>
-    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script> particlesJS.load('particles-js', 'particlesjs.json', function() {
         console.log('callback - particles.js config loaded');
-      });</script> -->
+      });</script>
   </body>
 </html>

@@ -21,13 +21,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* #particles-js {
+#particles-js {
   position: absolute;
-  width: fit-content;
+  width: max-content;
   height: 100%;
   background-size: cover;
   background-position: 100%;
-} */
+}
 
 body {
   background-color: var(--primary-background);
@@ -245,14 +245,13 @@ body {
     font-size: 1.1em;
     header {
       nav{
-       background-color: var(--nav-background);
         ul.navMenu {
           position: fixed;
           left: -100%;
           top: 80px;
           gap: 8px;
           padding: 40px 0;
-          background-color: var(--nav-background);
+          background-color: var(--primary-background);
           flex-direction: column;
           width: 100%;
           text-align: center;
