@@ -251,8 +251,9 @@ body {
           left: -100%;
           top: 80px;
           gap: 8px;
-          padding-bottom: 40px;
-          padding-top: 0;
+          padding: 40px 0;
+          
+          background-color: var(--nav-background);
           flex-direction: column;
           width: 100%;
           text-align: center;
