@@ -983,8 +983,8 @@ body {
       width: 36px;
       height: 36px;
     }
-    img:hover {
-      color: var(--button-background-color);
+    svg:hover {
+      filter: brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(1414%) hue-rotate(282deg) brightness(88%) contrast(98%);
       transition: fill 0.3s ease;
       fill: var(--tag-colors);
       transform: scale(1.1);
