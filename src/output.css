@@ -1395,6 +1395,14 @@ body {
 }
 
 @media (min-width: 1024px){
+  .lg\:sticky{
+    position: sticky;
+  }
+
+  .lg\:top-4{
+    top: 1rem;
+  }
+
   .lg\:ml-36{
     margin-left: 9rem;
   }
