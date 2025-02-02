@@ -14,7 +14,7 @@
   --button-background-color: #ba2ea5;
   --tag-colors: #fad1f4;
   --section-line: rgb(214, 214, 214);
-  --nav-background: #082240;
+  --nav-background: #051a35;
 }
 
 html {
@@ -34,6 +34,7 @@ body {
   color: white;
   font-size: 1.5em;
   font-family: "Jura", sans-serif;
+  z-index: 1;
   .btn {
     padding: 9px 15px;
     font-weight: 700;
@@ -248,7 +249,7 @@ body {
     font-size: 1.1em;
     header {
       nav{
-        position: fixed;
+        background-color: var(--nav-background);
         ul.navMenu {
           position: fixed;
           left: -100%;

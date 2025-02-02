@@ -564,16 +564,8 @@ video {
   display: none;
 }
 
-.sticky{
-  position: sticky;
-}
-
 .left-10{
   left: 2.5rem;
-}
-
-.top-2{
-  top: 0.5rem;
 }
 
 .m-0{
@@ -771,7 +763,7 @@ video {
   --button-background-color: #ba2ea5;
   --tag-colors: #fad1f4;
   --section-line: rgb(214, 214, 214);
-  --nav-background: #082240;
+  --nav-background: #051a35;
 }
 
 html {
@@ -792,6 +784,7 @@ body {
   color: white;
   font-size: 1.5em;
   font-family: "Jura", sans-serif;
+  z-index: 1;
   .btn {
     padding: 9px 15px;
     font-weight: 700;
@@ -1001,6 +994,7 @@ body {
     font-size: 1.1em;
     header {
       nav{
+        background-color: var(--nav-background);
         ul.navMenu {
           position: fixed;
           left: -100%;
@@ -1161,8 +1155,16 @@ body {
 }
 
 @media not all and (min-width: 768px){
-  .max-md\:relative{
-    position: relative;
+  .max-md\:fixed{
+    position: fixed;
+  }
+
+  .max-md\:sticky{
+    position: sticky;
+  }
+
+  .max-md\:top-2{
+    top: 0.5rem;
   }
 
   .max-md\:my-8{
@@ -1213,10 +1215,6 @@ body {
 
   .max-md\:gap-2\.5{
     gap: 0.625rem;
-  }
-
-  .max-md\:overflow-hidden{
-    overflow: hidden;
   }
 
   .max-md\:text-left{
