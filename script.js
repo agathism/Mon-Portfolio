@@ -1,6 +1,7 @@
 const burgerBtn = document.querySelector('#checkbox');
 const navMenu = document.querySelector('.navMenu');
 const links = document.querySelectorAll('.navItem > a');
+const navbar = document.querySelector('.navbar');
 
 burgerBtn.addEventListener("click", () => {
   burgerBtn.checked = !navMenu.classList.contains('active');
@@ -14,7 +15,13 @@ links.forEach((link) => {
   });
 });
 
-
+// window.addEventListener("scroll", function() {
+//   if (window.scrollY > 50) { 
+//       navbar.classList.add("scrolled"); 
+//   } else {
+//       navbar.classList.remove("scrolled"); 
+//   }
+// });
 
 
 

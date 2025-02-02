@@ -4,17 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
 
-@tailwind  base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary-background: #091830 ;
+  --primary-background: #031938;
   --secondary-background: #172743;
   --button-background-color: #ba2ea5;
   --tag-colors: #fad1f4;
   --section-line: rgb(214, 214, 214);
-  --nav-background: #051a35;
+  --nav-background:  #031938;
 }
 
 html {
@@ -126,8 +126,9 @@ body {
         counter-increment: section 2;
         content: "0" counter(section) ".";
       }
-      svg:hover{
-        filter: brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(1414%) hue-rotate(282deg) brightness(88%) contrast(98%);
+      svg:hover {
+        filter: brightness(0) saturate(100%) invert(27%) sepia(99%)
+          saturate(1414%) hue-rotate(282deg) brightness(88%) contrast(98%);
       }
     }
     section#projects {
@@ -232,7 +233,8 @@ body {
       height: 36px;
     }
     svg:hover {
-      filter: brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(1414%) hue-rotate(282deg) brightness(88%) contrast(98%);
+      filter: brightness(0) saturate(100%) invert(27%) sepia(99%)
+        saturate(1414%) hue-rotate(282deg) brightness(88%) contrast(98%);
       transition: fill 0.3s ease;
       fill: var(--tag-colors);
       transform: scale(1.1);
@@ -248,8 +250,12 @@ body {
   body {
     font-size: 1.1em;
     header {
-      nav{
-        background-color: var(--nav-background);
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
         ul.navMenu {
           position: fixed;
           left: -100%;
@@ -317,6 +323,9 @@ body {
           transform: rotate(180deg);
         }
       }
+      /* nav:scrollbar-color{
+        background-color: var(--nav-background);
+      }  */
     }
     main {
       section#skills {
@@ -342,8 +351,8 @@ body {
     }
   }
 }
-@media screen and (min-width: 768px){
-  body{
+@media screen and (min-width: 768px) {
+  body {
     header {
       nav {
         input#checkbox,
@@ -377,4 +386,4 @@ body {
       }
     }
   }
-} 
+}
