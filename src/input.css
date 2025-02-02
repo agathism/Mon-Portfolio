@@ -248,6 +248,7 @@ body {
     font-size: 1.1em;
     header {
       nav{
+        position: fixed;
         ul.navMenu {
           position: fixed;
           left: -100%;
