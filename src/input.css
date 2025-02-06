@@ -117,10 +117,6 @@ body {
       }
     }
     section#skills {
-      img {
-        width: 80px;
-        height: 80px;
-      }
       h4::before {
         counter-increment: section 2;
         content: "0" counter(section) ".";
@@ -227,10 +223,6 @@ body {
   }
   footer {
     font-size: 0.8em;
-    img {
-      width: 36px;
-      height: 36px;
-    }
     svg:hover {
       filter: brightness(0) saturate(100%) invert(27%) sepia(99%)
         saturate(1414%) hue-rotate(282deg) brightness(88%) contrast(98%);
@@ -323,15 +315,12 @@ body {
           transform: rotate(180deg);
         }
       }
-      /* nav:scrollbar-color{
-        background-color: var(--nav-background);
-      }  */
     }
     main {
       section#skills {
-        img {
-          width: 100px;
-          height: 105px;
+        svg {
+          width: 75px;
+          height: 75px;
         }
       }
       section#projects {
