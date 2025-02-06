@@ -777,11 +777,10 @@ html {
 
 #particles-js {
   position: absolute;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: 100%;
+  background-position: right;
 }
 
 body {
@@ -1221,6 +1220,24 @@ body {
 
   .max-md\:gap-4{
     gap: 1rem;
+  }
+
+  .max-md\:overflow-hidden{
+    overflow: hidden;
+  }
+
+  .max-md\:overflow-x-hidden{
+    overflow-x: hidden;
+  }
+
+  .max-md\:overflow-y-hidden{
+    overflow-y: hidden;
+  }
+
+  .max-md\:truncate{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .max-md\:text-left{
