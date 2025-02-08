@@ -772,7 +772,6 @@ video {
   --button-background-color: #ba2ea5;
   --tag-colors: #fad1f4;
   --section-line: rgb(214, 214, 214);
-  --nav-background:  #031938;
 }
 
 html {
@@ -792,10 +791,10 @@ html {
 }
 
 body {
-  background-color: var(--primary-background);
   color: white;
   font-size: 1.5em;
   font-family: "Jura", sans-serif;
+  background-color: var(--primary-background);
   .btn {
     padding: 9px 15px;
     font-weight: 700;
@@ -1004,14 +1003,12 @@ body {
         left: 0;
         width: 100%;
         z-index: 1000;
-        background-color: var(--nav-background);
         ul.navMenu {
           position: fixed;
           left: -100%;
           top: 80px;
           gap: 8px;
           padding: 40px 0;
-          background-color: var(--primary-background);
           flex-direction: column;
           width: 100%;
           text-align: center;
