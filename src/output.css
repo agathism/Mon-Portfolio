@@ -1285,10 +1285,6 @@ body {
 }
 
 @media (min-width: 640px){
-  .sm\:z-10{
-    z-index: 10;
-  }
-
   .sm\:mx-10{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
