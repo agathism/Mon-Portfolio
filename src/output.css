@@ -1003,7 +1003,9 @@ body {
         left: 0;
         width: 100%;
         z-index: 1000;
+        background-color: var(--primary-background);
         ul.navMenu {
+          background-color: var(--primary-background);
           position: fixed;
           left: -100%;
           top: 80px;
