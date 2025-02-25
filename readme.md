@@ -21,11 +21,11 @@ Ensuite, j’ai rédigé un cahier des charges listant les fonctionnalités et l
 
 ✅ Une page d’accueil accrocheuse avec une présentation rapide.
 
-✅ Une section "À propos" détaillant mon parcours et mes compétences.
+✅ Une section "À propos" détaillant mon parcours.
 
-✅ Un portfolio de projets avec des visuels et des descriptions.
+✅ Une section compétences afin de présenter les différentes technologies et langages maîtrisés.
 
-✅ Une page de contact avec un formulaire et mes liens professionnels.
+✅ Une section de projets avec des visuels et des descriptions ainsi que les languages utilisés.
 
 ## 3️⃣ Concevoir la maquette et le design
 Une fois mes idées claires, j’ai créé une maquette de mon site en utilisant un outil comme Figma ou Adobe XD. Cette étape m’a permis de :
@@ -44,7 +44,7 @@ Avant d’écrire une seule ligne de code, j’ai dû choisir les technologies l
 - **Tailwind CSS** : Pour une utilisation plus rapide et éfficace de CSS.
 - **Git** : Pour le contrôle de version de mes projets.
 - **GitHub** : Pour héberger et partager mon code.
-- **GitHub** : Pages pour l’hébergement.
+- **GitHub Pages** : Pages pour l’hébergement du site.
 
 J’ai aussi préparé mon environnement de développement, installé les outils nécessaires et configuré un dépôt Git/GitHub pour suivre l’évolution du projet.
 
