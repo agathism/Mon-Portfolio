@@ -7,7 +7,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'animate.css';
 
 :root {
   --primary-background: #031938;
@@ -71,6 +70,10 @@ body {
     height: 1px;
     background-color: var(--section-line);
     border-radius: 10px;
+  }
+  body.animate__animated.animate__fadeInDown {
+    -webkit-animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
   header {
     hgroup {
