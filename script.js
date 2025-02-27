@@ -6,15 +6,19 @@ const navbar = document.querySelector('.navbar');
 burgerBtn.addEventListener("click", () => {
   burgerBtn.checked = !navMenu.classList.contains('active');
   navMenu.classList.toggle("active");
+  document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : 'auto';
 });
 
 links.forEach((link) => {
   link.addEventListener('click', () => {
     burgerBtn.checked = false;
     navMenu.classList.toggle("active");
+    document.body.style.overflow = 'auto';
   });
 });
 
-
-
-
+let isMenuAlreadyOpen = false;
+$('.burgerBtn').on('click', () => {
+  $('body').css("overflow", isMenuAlreadyOpen ? "auto" : "hidden");
+  isMenuAlreadyOpen = !isMenuAlreadyOpen;
+});
