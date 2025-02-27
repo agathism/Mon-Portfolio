@@ -17,8 +17,3 @@ links.forEach((link) => {
   });
 });
 
-let isMenuAlreadyOpen = false;
-$('.burgerBtn').on('click', () => {
-  $('body').css("overflow", isMenuAlreadyOpen ? "auto" : "hidden");
-  isMenuAlreadyOpen = !isMenuAlreadyOpen;
-});
