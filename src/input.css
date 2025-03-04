@@ -363,6 +363,9 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
+    main{
+      margin: 9rem;
+    }
     footer {
       ul {
         position: fixed;
