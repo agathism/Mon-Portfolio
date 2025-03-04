@@ -43,8 +43,8 @@ Avant d’écrire une seule ligne de code, j’ai dû choisir les technologies l
 - **JavaScript** : Pour ajouter de l'interactivité à mes projets.
 - **Tailwind CSS** : Pour une utilisation plus rapide et éfficace de CSS.
 - **Git** : Pour le contrôle de version de mes projets.
-- **GitHub** : Pour héberger et partager mon code.
-- **GitHub Pages** : Pages pour l’hébergement du site.
+- **GitHub** : Pour partager mon code.
+- **Vercel** : Pour l’hébergement du site.
 
 J’ai aussi préparé mon environnement de développement, installé les outils nécessaires et configuré un dépôt Git/GitHub pour suivre l’évolution du projet.
 
